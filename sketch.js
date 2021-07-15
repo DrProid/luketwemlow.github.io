@@ -7,9 +7,12 @@ let system; //particle system
 let averageFrameRate = [];
 let averageFrames = 0;
 let gridDimension = 300;//the dimensions of the grid containers that particles use to search for neighbours
-let img;
+let img = [];
 function preload() {
-  img = loadImage('luke.png');
+  for(let i = 1; i <= 5; i++){
+    tempImg = loadImage('luke_0'+i+'.png');
+    img.push(tempImg);
+  }
 }
 function setup() {
   let cnvWidth = windowWidth + gridDimension - (windowWidth % gridDimension);

@@ -103,6 +103,7 @@ class ParticleSystem {
 class Particle {
     constructor(gridSize) {
         this.gridSize = gridSize;
+        this.enum = floor(random(img.length));
         this.pos = createVector(random(width), random(height));
         this.pos = boundaries(this.pos, this.gridSize);
         let xMargin = (width % gridSize) / 2;
@@ -198,7 +199,7 @@ class Particle {
         push();
         //draw particle
         imageMode(CENTER);
-        image(img, this.pos.x, this.pos.y);
+        image(img[this.enum], this.pos.x, this.pos.y);
         // noStroke();
         // fill(this.colour);
         // circle(this.pos.x, this.pos.y, this.radius);
