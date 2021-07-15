@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.2fr 2.4fr;
+    gap: 0px 0px;
+    grid-template-areas: "Head" "Nav" "Page";
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Head {
+    grid-area: Head;
+}
+
+.Page {
+    grid-area: Page;
+}
