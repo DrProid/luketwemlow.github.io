@@ -6,11 +6,11 @@ let doArrow = false;
 let system; //particle system
 let averageFrameRate = [];
 let averageFrames = 0;
-let gridDimension = 300;//the dimensions of the grid containers that particles use to search for neighbours
+let gridDimension = 150;//the dimensions of the grid containers that particles use to search for neighbours
 let img = [];
 function preload() {
-  for(let i = 1; i <= 5; i++){
-    tempImg = loadImage('luke_0'+i+'.png');
+  for(let i = 1; i <= 8; i++){
+    tempImg = loadImage('75x75_luke_0'+i+'.png');
     img.push(tempImg);
   }
 }
